@@ -8,7 +8,9 @@
     name="description"
     content="Astral Node Multimedia Network — central hub for Nathan Getz’s music, visuals, and creative infrastructure."
   />
-  <!-- Tailwind CDN (great for a temporary placeholder; swap to local build later) -->
+  <!-- Favicon / logo -->
+  <link rel="icon" type="image/svg+xml" href="/logo_icon_dark.svg" />
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -22,14 +24,26 @@
     <!-- Top ribbon -->
     <header class="w-full border-b border-slate-800/80 bg-black/60 backdrop-blur">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
-        <div class="flex items-center gap-2">
-          <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-xs font-medium tracking-wide uppercase">
-            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            In Early Orbit
-          </span>
-          <p class="text-xs text-slate-400">
-            This site is under active development — core lore + links are live.
-          </p>
+        <div class="flex items-center gap-3">
+          <img
+            src="/logo_icon_dark.svg"
+            alt="Astral Node logo"
+            class="h-7 w-auto"
+          />
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-semibold tracking-[0.18em] uppercase text-slate-300">
+                Astral Node
+              </span>
+              <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-[0.65rem] font-medium tracking-wide uppercase">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                In Early Orbit
+              </span>
+            </div>
+            <p class="text-[0.7rem] text-slate-400">
+              This site is under active development — core lore + links are live.
+            </p>
+          </div>
         </div>
         <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-slate-300">
           <a href="#lore" class="hover:text-emerald-300 transition">Lore</a>
@@ -91,37 +105,56 @@
               </p>
 
               <dl class="mt-4 space-y-2 text-xs text-slate-300">
-                <div class="flex justify-between gap-3">
-                  <dt class="text-slate-400">Core Hub</dt>
-                  <dd class="flex items-center gap-2">
-                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                    astralnode.net
-                  </dd>
-                </div>
-                <div class="flex justify-between gap-3">
-                  <dt class="text-slate-400">Music Nodes</dt>
-                  <dd class="text-right">
-                    deltavolt.astralnode.net<br />
-                    dreamvector.astralnode.net<br />
-                    cephalodynia.astralnode.net
-                  </dd>
-                </div>
-                <div class="flex justify-between gap-3">
-                  <dt class="text-slate-400">Visual Nodes</dt>
-                  <dd class="text-right">
-                    photo.astralnode.net<br />
-                    3d.astralnode.net<br />
-                    design.astralnode.net
-                  </dd>
-                </div>
-                <div class="flex justify-between gap-3">
-                  <dt class="text-slate-400">Infrastructure</dt>
-                  <dd class="text-right">
-                    heartbeat.astralnode.net<br />
-                    dev.astralnode.net
-                  </dd>
-                </div>
-              </dl>
+
+		  <div class="flex justify-between gap-3">
+		    <dt class="text-slate-400">Core Hub</dt>
+		    <dd class="flex items-center gap-2">
+		      <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+		      astralnode.net
+		    </dd>
+		  </div>
+
+		  <div class="flex justify-between gap-3">
+		    <dt class="text-slate-400">Music Nodes</dt>
+		    <dd class="text-right space-y-1">
+		      <div class="flex items-center justify-end gap-2">
+		        <span class="h-1.5 w-1.5 rounded-full bg-yellow-300"></span>
+		        deltavolt.astralnode.net
+		      </div>
+			<div class="flex items-center justify-end gap-2">
+		        <span class="h-1.5 w-1.5"></span>
+		        (deltavoltmusic.com)
+		      </div>
+		      <div class="flex items-center justify-end gap-2">
+		        <span class="h-1.5 w-1.5"></span>
+	        	dreamvector.astralnode.net
+		      </div>
+		      <div class="flex items-center justify-end gap-2">
+		        <span class="h-1.5 w-1.5"></span>
+		        cephalodynia.astralnode.net
+		      </div>
+		    </dd>
+		  </div>
+
+		  <div class="flex justify-between gap-3">
+		    <dt class="text-slate-400">Visual Nodes</dt>
+		    <dd class="text-right">
+		      photo.astralnode.net<br />
+		      3d.astralnode.net<br />
+		      design.astralnode.net
+		    </dd>
+		  </div>
+
+		  <div class="flex justify-between gap-3">
+		    <dt class="text-slate-400">Infrastructure</dt>
+		    <dd class="text-right">
+		      heartbeat.astralnode.net<br />
+		      dev.astralnode.net
+		    </dd>
+		  </div>
+
+		</dl>
+
 
               <div class="mt-5 border-t border-slate-800/80 pt-4">
                 <p class="text-[0.7rem] leading-relaxed text-slate-400">
@@ -150,3 +183,211 @@
               <p class="text-sm text-slate-300">
                 The Network spans <span class="text-slate-100">liquid DnB and ambient scores</span>,
                 surreal photography, neon wireframe 3D worlds, web / graphic design,
+                and the underlying servers and information systems that keep it all alive.
+              </p>
+              <p class="text-sm text-slate-300">
+                This page will eventually expand into a fully interactive “lore console” —
+                timelines, node maps, release archives, and live system status.
+                For now, it’s a clean placeholder: a reference point while the full front-end is forged.
+              </p>
+            </div>
+
+            <!-- Logo card -->
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-950/80 p-5 sm:p-6 backdrop-blur flex flex-col items-center">
+              <div class="text-[0.68rem] font-mono text-slate-400 mb-4 tracking-tight w-full">
+                <span class="text-cyan-400">// Astral Node mark</span>
+              </div>
+              <div class="flex items-center justify-center w-full mb-4">
+                <img
+                  src="/logo_icon_dark.svg"
+                  alt="Astral Node logo mark"
+                  class="h-20 sm:h-24 w-auto"
+                />
+              </div>
+              <p class="mt-1 text-[0.75rem] text-slate-400 text-center">
+                Core logo mark rendered as SVG for dark interfaces.
+                Final wordmark / lockups will evolve with the full brand system.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Nodes -->
+        <section id="nodes" class="mt-14 sm:mt-18">
+          <div class="flex items-baseline justify-between gap-4 mb-6">
+            <h2 class="text-sm font-semibold tracking-[0.18em] uppercase text-slate-400">
+              Node Constellation
+            </h2>
+            <p class="text-[0.75rem] text-slate-400">
+              Each Node will eventually have its own subdomain and dedicated interface.
+            </p>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Deltavolt -->
+            <a class="group relative rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 sm:p-5 hover:border-emerald-400/60 hover:bg-slate-900/80 transition" href="https://deltavoltmusic.com">
+              <div class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-br from-emerald-400/10 via-cyan-400/10 to-slate-500/10 blur-xl"></div>
+              <div class="relative">
+                <h3 class="text-sm font-semibold text-slate-50">Deltavolt</h3>
+                <p class="mt-1 text-[0.75rem] text-emerald-200">
+                  neon chillsynth • cinematic ambient • future memory
+                </p>
+                <p class="mt-3 text-[0.8rem] text-slate-300">
+                  Emotional, dance-literate atmospheres for records, performances, and immersive scores.
+                </p>
+                <p class="mt-3 text-[0.7rem] text-slate-500">
+                  Current home: <span class="text-slate-300">deltavoltmusic.com</span>
+                </p>
+              </div>
+            </a>
+
+            <!-- Dreamvector -->
+            <article class="group relative rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 sm:p-5 hover:border-cyan-400/60 hover:bg-slate-900/80 transition">
+              <div class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-br from-cyan-500/10 via-emerald-400/10 to-fuchsia-500/10 blur-xl"></div>
+              <div class="relative">
+                <h3 class="text-sm font-semibold text-slate-50">Dreamvector</h3>
+                <p class="mt-1 text-[0.75rem] text-cyan-200">
+                  liquid DnB • synthwave glow • future nostalgia
+                </p>
+                <p class="mt-3 text-[0.8rem] text-slate-300">
+                  Drum &amp; bass and neon-tinged electronica from the heartspace where rhythm remembers you.
+                </p>
+                <p class="mt-3 text-[0.7rem] text-slate-500">
+                  Future home: <span class="text-slate-300">dreamvector.astralnode.net</span>
+                </p>
+              </div>
+            </article>
+
+            <!-- Photography -->
+            <article class="group relative rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 sm:p-5 hover:border-fuchsia-400/60 hover:bg-slate-900/80 transition">
+              <div class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-br from-fuchsia-500/10 via-purple-500/10 to-cyan-400/10 blur-xl"></div>
+              <div class="relative">
+                <h3 class="text-sm font-semibold text-slate-50">Photography Node</h3>
+                <p class="mt-1 text-[0.75rem] text-fuchsia-200">
+                  fine art • surreal compositing • performance
+                </p>
+                <p class="mt-3 text-[0.8rem] text-slate-300">
+                  Surreal fine art photography, live performance documentation, and long-form book projects.
+                </p>
+                <p class="mt-3 text-[0.7rem] text-slate-500">
+                  Future home: <span class="text-slate-300">photo.astralnode.net</span>
+                </p>
+              </div>
+            </article>
+
+            <!-- 3D / CGI -->
+            <article class="group relative rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 sm:p-5 hover:border-cyan-300/60 hover:bg-slate-900/80 transition">
+              <div class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-br from-cyan-400/10 via-sky-500/10 to-violet-500/10 blur-xl"></div>
+              <div class="relative">
+                <h3 class="text-sm font-semibold text-slate-50">3D / CGI Node</h3>
+                <p class="mt-1 text-[0.75rem] text-cyan-200">
+                  neon wireframes • volumetric worlds
+                </p>
+                <p class="mt-3 text-[0.8rem] text-slate-300">
+                  Hyper-stylized neon wireframe environments, album art, and motion loops.
+                </p>
+                <p class="mt-3 text-[0.7rem] text-slate-500">
+                  Future home: <span class="text-slate-300">3d.astralnode.net</span>
+                </p>
+              </div>
+            </article>
+
+            <!-- Design / Web -->
+            <article class="group relative rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 sm:p-5 hover:border-emerald-300/60 hover:bg-slate-900/80 transition">
+              <div class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-br from-emerald-400/10 via-lime-400/10 to-slate-300/10 blur-xl"></div>
+              <div class="relative">
+                <h3 class="text-sm font-semibold text-slate-50">Design / Web Node</h3>
+                <p class="mt-1 text-[0.75rem] text-emerald-200">
+                  brand systems • UI • print
+                </p>
+                <p class="mt-3 text-[0.8rem] text-slate-300">
+                  Logos, visual identity systems, and web experiences that tie the Nodes together.
+                </p>
+                <p class="mt-3 text-[0.7rem] text-slate-500">
+                  Future home: <span class="text-slate-300">design.astralnode.net</span>
+                </p>
+              </div>
+            </article>
+
+            <!-- Librarian / Infrastructure -->
+            <article class="group relative rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 sm:p-5 hover:border-sky-300/60 hover:bg-slate-900/80 transition">
+              <div class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-br from-sky-400/10 via-indigo-400/10 to-fuchsia-400/10 blur-xl"></div>
+              <div class="relative">
+                <h3 class="text-sm font-semibold text-slate-50">
+                  The Librarian &amp; Heartbeat
+                </h3>
+                <p class="mt-1 text-[0.75rem] text-sky-200">
+                  knowledge engine • self-hosted infrastructure
+                </p>
+                <p class="mt-3 text-[0.8rem] text-slate-300">
+                  A self-hosted knowledge system and routing stack that catalogs all creative output.
+                </p>
+                <p class="mt-3 text-[0.7rem] text-slate-500">
+                  Future homes: <span class="text-slate-300">heartbeat.astralnode.net</span>,
+                  <span class="text-slate-300">dev.astralnode.net</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="mt-14 sm:mt-16 mb-12">
+          <div class="rounded-2xl border border-slate-800/80 bg-slate-950/80 px-5 py-6 sm:px-6 sm:py-7 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+            <div>
+              <h2 class="text-sm font-semibold tracking-[0.18em] uppercase text-slate-400">
+                Contact &amp; Signals
+              </h2>
+              <p class="mt-3 text-sm text-slate-200 max-w-xl">
+                Until the full site launches, reach out directly for collaborations, commissions,
+                or licensing inquiries.
+              </p>
+            </div>
+
+            <div class="space-y-2 text-sm">
+              <p class="text-slate-300">
+                Email:
+                <span class="font-mono text-emerald-300">nathan@astralnode.net</span>
+              </p>
+
+              <!-- Social Links -->
+              <div class="mt-3 flex flex-col gap-2 text-[0.8rem]">
+                <a href="https://www.instagram.com/astral.node" target="_blank"
+                   class="text-cyan-300 hover:text-cyan-200 transition">
+                  → Instagram (@astral.node)
+                </a>
+                <a href="https://www.facebook.com/astral.node.net/" target="_blank"
+                   class="text-fuchsia-300 hover:text-fuchsia-200 transition">
+                  → Facebook (Astral Node Multimedia Network)
+                </a>
+              </div>
+
+              <p class="text-[0.75rem] text-slate-500 mt-2">
+                More social &amp; music links will appear here as Nodes come online.
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-black/80">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-[0.7rem] text-slate-500">
+          © <span id="year-span"></span> Astral Node Multimedia Network · All rights reserved.
+        </p>
+        <p class="text-[0.7rem] text-slate-500">
+          Placeholder build · Final interface coming soon.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Minimal JS for year -->
+  <script>
+    document.getElementById('year-span').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
