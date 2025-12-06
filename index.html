@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <title>Astral Node Multimedia Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Astral Node Multimedia Network — central hub for Nathan Getz’s music, visuals, and creative infrastructure."
+  />
+  <!-- Tailwind CDN (great for a temporary placeholder; swap to local build later) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1f2937 0, #020617 40%, #000 100%);
+    }
+  </style>
+</head>
+<body class="h-full text-slate-100 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Top ribbon -->
+    <header class="w-full border-b border-slate-800/80 bg-black/60 backdrop-blur">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-xs font-medium tracking-wide uppercase">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            In Early Orbit
+          </span>
+          <p class="text-xs text-slate-400">
+            This site is under active development — core lore + links are live.
+          </p>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-slate-300">
+          <a href="#lore" class="hover:text-emerald-300 transition">Lore</a>
+          <a href="#nodes" class="hover:text-cyan-300 transition">Nodes</a>
+          <a href="#contact" class="hover:text-fuchsia-300 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="flex-1">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-16">
+
+        <!-- Hero -->
+        <section class="grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)] items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-[0.65rem] tracking-[0.15em] uppercase text-slate-400 mb-4">
+              <span class="h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+              Astral Node Multimedia Network
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-50">
+              A central hub for
+              <span class="bg-gradient-to-r from-cyan-400 via-emerald-400 to-fuchsia-400 bg-clip-text text-transparent">
+                music, imagery, and information systems
+              </span>
+              in orbit around one mind.
+            </h1>
+
+            <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-xl">
+              astralnode.net is the backbone of an interconnected ecosystem of aliases, projects,
+              and digital infrastructure — built and run by
+              <span class="text-emerald-300">Nathan Getz</span>.
+              This is the lore layer: what the Network is, why it exists, and where each Node lives.
+            </p>
+
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <span class="inline-flex items-center gap-2 rounded-full bg-slate-900/70 border border-slate-700/70 px-3 py-1 text-xs text-slate-300">
+                <span class="h-1.5 w-1.5 rounded-full bg-fuchsia-400"></span>
+                Site UI in development
+              </span>
+              <span class="inline-flex items-center gap-2 rounded-full bg-slate-900/70 border border-slate-700/70 px-3 py-1 text-xs text-slate-300">
+                <span class="h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                Lore + core links online
+              </span>
+            </div>
+          </div>
+
+          <!-- Status / quick links card -->
+          <aside class="relative">
+            <div class="absolute inset-0 -z-10 blur-3xl opacity-60 bg-gradient-to-br from-cyan-500/50 via-emerald-400/40 to-fuchsia-500/40"></div>
+
+            <div class="rounded-2xl border border-slate-700/80 bg-black/70 backdrop-blur-lg p-5 sm:p-6 shadow-[0_0_45px_rgba(0,0,0,0.9)]">
+              <h2 class="text-xs font-semibold tracking-[0.18em] uppercase text-slate-400">
+                Network Status
+              </h2>
+              <p class="mt-3 text-sm text-slate-200">
+                The Astral Node is online. Subdomains and services are in staged deployment.
+              </p>
+
+              <dl class="mt-4 space-y-2 text-xs text-slate-300">
+                <div class="flex justify-between gap-3">
+                  <dt class="text-slate-400">Core Hub</dt>
+                  <dd class="flex items-center gap-2">
+                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                    astralnode.net
+                  </dd>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <dt class="text-slate-400">Music Nodes</dt>
+                  <dd class="text-right">
+                    deltavolt.astralnode.net<br />
+                    dreamvector.astralnode.net<br />
+                    cephalodynia.astralnode.net
+                  </dd>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <dt class="text-slate-400">Visual Nodes</dt>
+                  <dd class="text-right">
+                    photo.astralnode.net<br />
+                    3d.astralnode.net<br />
+                    design.astralnode.net
+                  </dd>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <dt class="text-slate-400">Infrastructure</dt>
+                  <dd class="text-right">
+                    heartbeat.astralnode.net<br />
+                    dev.astralnode.net
+                  </dd>
+                </div>
+              </dl>
+
+              <div class="mt-5 border-t border-slate-800/80 pt-4">
+                <p class="text-[0.7rem] leading-relaxed text-slate-400">
+                  For now, think of this page as mission control notes:
+                  the lore, the structure, and ways to reach the artist —
+                  while the full interface is crafted behind the scenes.
+                </p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <!-- Lore -->
+        <section id="lore" class="mt-12 sm:mt-16">
+          <div class="grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1.3fr)] items-start">
+            <div class="space-y-4">
+              <h2 class="text-sm font-semibold tracking-[0.18em] uppercase text-slate-400">
+                Lore Snapshot
+              </h2>
+              <p class="text-sm text-slate-200">
+                Astral Node Multimedia Network is a <span class="text-emerald-300">multi-disciplinary studio</span>
+                and <span class="text-cyan-300">personal mythos</span> wrapped into one system. Each “Node” is a facet:
+                a music alias, a visual practice, or an infrastructure project — all orbiting a shared vision:
+                <span class="text-fuchsia-300">turning imagination into coherent, high-impact media</span>.
+              </p>
+              <p class="text-sm text-slate-300">
+                The Network spans <span class="text-slate-100">liquid DnB and ambient scores</span>,
+                surreal photography, neon wireframe 3D worlds, web / graphic design,
